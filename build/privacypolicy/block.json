@@ -1,0 +1,8 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ourblocktheme/privacypolicy",
+  "title": "Loan Bazaar Privacy Policy Page",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

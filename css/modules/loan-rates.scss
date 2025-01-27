@@ -1,0 +1,699 @@
+.loan-rates-page {
+	.container {
+		width: 100%;
+		max-width: 1184px;
+		padding: 0 22px;
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 1rem;
+	}
+
+	.decs-title {
+		font-size: 2.625rem;
+		font-weight: 600;
+		padding-bottom: 0.8rem;
+	}
+
+	.section-two {
+		padding: 30px 0 0px;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.section-four {
+		padding: 30px 0 0px;
+	}
+
+	.hero-banner {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		// padding-bottom: 1rem;
+		@media screen and (max-width: 767px) {
+			height: 150px;
+		}
+	}
+
+	.hero-banner::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		// background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		color: #ffffff;
+		z-index: 1;
+		width: 100%;
+	}
+
+	.page-title {
+		color: #000;
+		font-size: 6rem;
+		font-weight: 800;
+		line-height: 7rem;
+		text-transform: uppercase;
+		padding: 5px 20px;
+		background-color: #e1d7d7;
+		width: 100%;
+
+		@media (max-width: 1024px) {
+			font-size: clamp(3rem, 3rem + 2vw, 4rem);
+			line-height: clamp(3rem, 3rem + 2vw, 4rem);
+		}
+
+		@media (max-width: 767px) {
+			font-size: clamp(2rem, 2rem + 2vw, 3rem);
+			line-height: clamp(2rem, 2rem + 2vw, 3rem);
+		}
+
+		@media (max-width: 480px) {
+			font-size: clamp(1.5rem, 1.5rem + 2vw, 2rem);
+			line-height: clamp(1.5rem, 1.5rem + 2vw, 2rem);
+		}
+	}
+
+	.current-date {
+		font-size: 2.5rem;
+		font-weight: 400;
+		line-height: 3.3rem;
+		text-transform: capitalize;
+		padding: 5px 20px;
+		// background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
+		width: fit-content;
+		margin: 0 auto;
+
+		@media (max-width: 1024px) {
+			font-size: clamp(1.5rem, 1.5rem + 2vw, 2rem);
+			line-height: clamp(1.5rem, 1.5rem + 2vw, 2rem);
+		}
+
+		@media (max-width: 480px) {
+			font-size: clamp(1rem, 1rem + 2vw, 1.5rem);
+			line-height: clamp(1rem, 1rem + 2vw, 1.5rem);
+		}
+	}
+
+	.interest-rates-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 20px 0;
+		border: 2px solid #000;
+	}
+
+	.interest-rates-table th,
+	.interest-rates-table td {
+		padding: 6px 12px;
+		text-align: left;
+		border: 1px solid #000;
+		font-size: 1.8rem;
+	}
+
+	.interest-rates-table th {
+		// background-color: #f5f5f5;
+		font-weight: bold;
+		border-bottom: 2px solid #000;
+	}
+
+	.interest-rates-table tr:hover {
+		opacity: 0.9;
+
+		td {
+			border-bottom: 1px solid #000;
+		}
+
+		// opacity: 1;
+	}
+
+	/* Optional: Make the last column border stronger */
+	.interest-rates-table th:last-child,
+	.interest-rates-table td:last-child {
+		border-right: 2px solid #000;
+	}
+
+	/* Optional: Make the last row border stronger */
+	.interest-rates-table tr:last-child td {
+		border-bottom: 2px solid #000;
+	}
+
+	.section-four {
+		.container {
+
+			>div,
+			.factors-list {
+				margin-bottom: 2.5rem;
+			}
+		}
+
+		h2 {
+			// font-size: 20px;
+			line-height: 1;
+			margin-bottom: 1.2rem;
+			font-size: 2.625rem;
+			font-weight: 600;
+		}
+
+		ul {
+			margin-left: 40px;
+			list-style-type: disc;
+
+			li {
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.arc {
+		// transition: transform 0.1s;
+		// transform: scale(0.85);
+	}
+
+	.arc.active {
+		// transform: scale(1);
+		// transform-origin: center;
+	}
+
+	#colorMeter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	.interest-rates-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 20px;
+	}
+
+	.rate-row {
+		// transition: all 0.01s ease 0s; 
+
+		td.red {
+			// background-color: rgba(232, 43, 63, 0.7);
+			background-color: #e48c1b;
+		}
+
+		td.green {
+			// background-color: rgba(90, 171, 97, 0.7);
+			background-color: #5aab61;
+		}
+
+		td.orange {
+			// background-color: rgba(255, 209, 64, 0.7);
+			background-color: #ffd140;
+
+		}
+	}
+
+	.rate-row.highlighted {
+		position: relative;
+		z-index: 1;
+
+		td {
+			z-index: 2;
+			position: relative;
+		}
+	}
+
+	.interest-rates-table th,
+	.interest-rates-table td {
+		padding: 12px;
+		// border: 1px solid #000;
+	}
+
+	.interest-rates-table th {
+		background-color: #fff;
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
+
+	.desktop-content-header {
+		th {
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+
+	p.mobile_text {
+		text-align: right;
+	}
+
+	@media (max-width: 768px) {
+		.interest-rates-table {
+			border: 2px solid #e1d7d7;
+
+			.desktop-content-header {
+				display: none;
+			}
+
+			tr.rate-row {
+				display: flex;
+				width: 100%;
+				flex-direction: row;
+				align-items: center;
+				align-items: stretch;
+
+				td.lender-name {
+					flex: 1;
+				}
+
+				td.roi-rate {
+					width: 80px;
+				}
+
+				td {
+					text-align: center;
+					padding: 10px;
+					vertical-align: middle;
+					display: flex; // Added
+					align-items: center; // Added
+					justify-content: center; // Added
+					border: 1px solid #e1d7d7;
+
+					&:first-child {
+						text-align: left;
+						justify-content: flex-start; // Added for left-aligned content
+					}
+				}
+
+				td.compare-button {
+					max-width: 100px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 481px) {}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		.interest-rates-table {
+			.desktop-content {
+				font-size: clamp(1em, 1em + 2vw, 1.2em);
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.section-three {
+
+			p.mobile_text,
+			span.mobile-roi-content {
+				display: none;
+			}
+
+			span.desktop-roi-content {
+				display: inline;
+			}
+
+			.interest-rates-table {
+				.compare__content-btn.desktop-content {
+					display: flex !important;
+					font-size: 1em;
+				}
+
+				.compare__content-btn.mobile-content {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.section-three {
+			p.mobile_text {
+				display: block;
+			}
+
+			.interest-rates-table {
+				tr.rate-row {
+					td {
+						padding: 8px 5px;
+					}
+
+					td:last-child {
+						padding: 8px 5px;
+					}
+				}
+
+				.desktop-content {
+					display: none;
+				}
+
+				.mobile-content {
+					display: block;
+					font-size: 16px;
+					height: -moz-max-content;
+					height: max-content;
+					width: max-content;
+					max-width: 100%;
+					height: auto;
+					min-height: 30px;
+					margin-top: 0;
+					padding: 5px 8px;
+				}
+
+				span.mobile-roi-content {
+					display: inline;
+					padding: 0;
+				}
+
+				span.desktop-roi-content {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 481) and (max-width: 767px) {
+		.interest-rates-table tr.rate-row td {
+			flex: 0 !important;
+		}
+
+		.section-three {
+			p.mobile_text {
+				display: block;
+			}
+
+			.interest-rates-table {
+				tr.rate-row {
+					td {
+						padding: 8px 5px;
+					}
+
+					td:last-child {
+						padding: 8px;
+						width: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//popup
+.loan-rates-page {
+	.section-three {
+		.interest-rates-table {
+			tr.rate-row {
+
+				.compare__content-btn.desktop-content,
+				.compare__content-btn.mobile-content {
+					min-height: 40px;
+					padding: 0 15px;
+					font-size: 1.8rem;
+				}
+
+				td.green,
+				td.red {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	#colorMeter {
+		text.color-meter-text {
+			text-anchor: middle;
+			font-size: 16px;
+			fill: black;
+			cursor: pointer;
+
+			@media (max-width: 499px) {
+				// font-size: clamp(1.5rem, 0.7vw, 2rem)!important;
+				font-size: 14px;
+			}
+		}
+
+		rect.color-meter-rect {}
+	}
+}
+
+
+.loan-rates-page {
+	// .rate-row {
+	// 	transition: background 0.3s;
+	// }
+
+	#interest-rates-table-container {
+		margin-top: -170px;
+
+		.interest-rates-table {
+			border-spacing: 0;
+		}
+	}
+
+	#color-pie-chart {
+		display: flex;
+		justify-content: center;
+		z-index: 0;
+		position: relative;
+		margin-top: 20px;
+
+		.pie_chart {
+			position: relative;
+			width: 400px;
+			height: 400px;
+			display: flex;
+		}
+
+		.text {
+			font-size: 20px;
+			flex-grow: 1;
+			font-weight: bold;
+		}
+
+		.text-low {
+			align-self: center;
+			margin-top: 30px;
+			text-align: right;
+
+		}
+
+		.text-high {
+			align-self: center;
+			margin-top: 30px;
+			text-align: left;
+		}
+
+		.text-med {
+			align-self: flex-start;
+			flex-grow: 1;
+			margin-top: -30px;
+			text-align: center;
+		}
+
+		.pie {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			clip: rect(0 400px 400px 200px);
+
+			&.one {
+				transform: rotate(-90deg);
+
+				.slice {
+					background-color: #5aab61;
+					/* 
+					.text {
+						left: 23%;
+						top: 19%;
+						transform: rotate(30deg);
+
+					} */
+				}
+			}
+
+			&.two {
+				transform: rotate(-30deg);
+
+				.slice {
+					background-color: #ffd140;
+					/* 
+					.text {
+						left: 23%;
+						top: 19%;
+						transform: rotate(-30deg);
+
+					} */
+				}
+			}
+
+			&.three {
+				transform: rotate(30deg);
+
+				.slice {
+					background-color: #e48c1b;
+
+					/* .text {
+						left: 30%;
+						top: 19%;
+						transform: rotate(-90deg);
+
+
+					} */
+				}
+			}
+
+			.slice {
+				transform: rotate(60deg);
+				cursor: pointer;
+
+				box-shadow: inset 8px 8px 13px rgba(0, 0, 0, 0.3);
+
+				// Inner shadow to simulate pressed effect
+				&:hover,
+				&:active {
+					transform: rotate(60.4deg);
+					transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+					box-shadow:
+						inset 0 0 15px rgba(0, 0, 0, 0.7),
+						inset 10px 10px 17px rgba(0, 0, 0, 0.5);
+				}
+
+			}
+
+			.slice.active {
+				transform: rotate(60.4deg);
+				transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+				box-shadow:
+					inset 0 0 15px rgba(0, 0, 0, 0.7),
+					inset 10px 10px 17px rgba(0, 0, 0, 0.5);
+
+			}
+		}
+
+		.slice {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			clip: rect(0 200px 400px 0px);
+
+			.text {
+				color: #000;
+				font-size: 16px;
+				font-weight: 500;
+				position: absolute;
+				font-size: 20px;
+				text-transform: capitalize;
+				padding: 5px;
+				background-color: #fff;
+				border-radius: 5px;
+			}
+		}
+
+		@media (max-width: 1200px) {
+			margin-top: 50px;
+		}
+	}
+
+	@media (max-width: 768px) {
+
+		#interest-rates-table-container {
+			margin-top: -90px;
+		}
+
+		#color-pie-chart {
+			.pie_chart {
+				position: relative;
+				width: 300px;
+				height: 300px;
+			}
+
+			.pie {
+				clip: rect(0 150px 300px 0px);
+			}
+
+			.slice {
+				clip: rect(0 150px 300px 0px);
+			}
+		}
+
+	}
+
+	@media (max-width: 768px) {
+		#interest-rates-table-container {
+			margin-top: -90px; // Adjust as needed for layout
+		}
+
+		#color-pie-chart {
+			.pie_chart {
+				position: relative;
+				width: 260px;
+				height: 260px;
+			}
+
+			.pie {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				clip: rect(0, 260px, 260px, 130px);
+
+				// &.one {
+				// 	transform: rotate(-90deg); 
+
+				// 	.slice {
+				// 		background-color: #5aab61; 
+				// 	}
+				// }
+
+				// &.two {
+				// 	transform: rotate(120deg); 
+				// 	transform: rotate(-30deg);
+				// 	.slice {
+				// 		background-color: #ffd140; 
+				// 	}
+				// }
+
+				// &.three {
+				// 	transform: rotate(240deg); 
+				// 	transform: rotate(30deg);
+				// 	.slice {
+				// 		background-color: #e48c1b;
+				// 	}
+				// }
+			}
+
+			.slice {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				clip: rect(0, 130px, 260px, 0);
+				transform: rotate(60deg);
+
+				.text {
+					font-size: 15px;
+
+				}
+			}
+		}
+	}
+}

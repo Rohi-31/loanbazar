@@ -1,0 +1,1004 @@
+.cibil-score-page {
+    .container {
+        width: 100%;
+        max-width: 1184px;
+        padding: 0 22px;
+        margin: 0 auto;
+    }
+
+    .cibil-banner {
+        overflow: hidden;
+    }
+
+    .cibil-banner .banner__inner {
+        min-height: 200px;
+        padding: 25px 0 0px;
+    }
+
+    .cibil-banner .banner__title {
+        margin-bottom: 20px;
+        color: #FFF;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        max-width: 657px;
+    }
+
+    .cibil-banner .banner__descr {
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 33px;
+        color: #A6C1EA;
+    }
+
+    .cibil {
+        padding: 60px 0 0;
+    }
+
+    .cibil__form-input,
+    .cibil__form-select {
+        color: #383A3E;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.426px;
+        /* 180.142% */
+        border-radius: 5.79px;
+        border: 1.158px solid #CBD4E1;
+        background: #FFF;
+        outline: none;
+        height: 53px;
+        padding: 5px 14px;
+    }
+
+    .cibil__form-input::placeholder {
+        color: #383A3E;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.426px;
+    }
+
+    .cibil__form-input {
+        width: 100%;
+    }
+
+    .cibil__form-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10' fill='none'%3E%3Cpath d='M0.962718 1.67187L7.91105 8.64522L14.8594 1.67188' stroke='%236C6C6C' stroke-width='1.73708' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-position: right 15px center;
+        background-repeat: no-repeat, repeat;
+        background-size: 15px 9px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cibil__otp-input {
+        width: 100%;
+        position: relative;
+    }
+
+    .cibil__form-select {
+        width: 100%;
+        max-width: 357px;
+    }
+
+    .select-selected.cibil__form-select.select-arrow-active {
+        border-radius: 5.79px 5.79px 0 0;
+    }
+
+    .select-selected.cibil__form-select.select-arrow-active {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='10' viewBox='0 0 17 10' fill='none'%3E%3Cpath d='M15.4435 8.83203L8.4952 1.85868L1.54688 8.83203' stroke='%236C6C6C' stroke-width='1.73708' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        ;
+    }
+
+    .custom-select {
+        position: relative;
+        width: 100%;
+        max-width: 357px;
+    }
+
+    .select-items div {
+        padding: 10px;
+        color: #383A3E;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.426px;
+        /* 180.142% */
+        border: 1.158px solid #CBD4E1;
+        border-top: none;
+        cursor: pointer;
+    }
+
+    .select-items div:hover {
+        background-color: #ddd;
+    }
+
+    .select-hide {
+        display: none;
+    }
+
+    .select-items {
+        background-color: #fff;
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cibil__top {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 30px;
+    }
+
+    .cibil__selects {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        margin-bottom: 30px;
+    }
+
+    .cibil__label {
+        font-size: 18px;
+        color: #383A3E;
+        font-weight: 500;
+        line-height: 23.161px;
+        letter-spacing: 0.18px;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 41px;
+    }
+
+    .cibil__label a {
+        color: #0070E0;
+    }
+
+    .cibil__checkbox {
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 22px;
+        width:22px;
+    }
+
+    .cibil__checkbox+.checkmark {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 30px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .cibil__checkbox+.checkmark:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Crect x='0.5' y='1.4043' width='19' height='19' rx='4.5' fill='white' stroke='%23797A7B'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cibil__checkbox:checked+.checkmark:before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Crect x='1' y='1.9043' width='18' height='18' rx='4' fill='white' stroke='%230070E0' stroke-width='2'/%3E%3Cpath d='M15.1617 7.55664L9.00268 13.7157L6.20312 10.9161' stroke='%230070E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    .cibil__otp-input label {
+        font-size: 13.394px;
+        font-weight: 400;
+        line-height: 20.606px;
+        /* 153.846% */
+        margin-bottom: 2px;
+        @media  screen and (min-width:768px){
+            // position: absolute;
+            // top: -20px;
+        }
+    }
+
+    .cibil__otp {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .cibil__otp-item {
+        // display: none;
+        gap: 41px;
+        width: 100%;
+        // max-width: 465px;
+    }
+
+    .cibil__otp-item.active {
+        display: flex;
+    }
+
+    .cibil__otp-item:last-of-type .cibil__form-input {
+        // border: none;
+        // border-radius: 0;
+        // border-bottom: 1px solid #CBD4E1;
+    }
+
+    .cibil__otp-item:last-of-type .cibil__otp-btn {
+        background-color: transparent;
+        color: #0070E0;
+
+    }
+
+    .cibil__otp-btn {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.426px;
+        border-radius: 5.79px;
+        background: #0070E0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #F2F5FF;
+        width: 100%;
+        max-width: 150px;
+        height: 53px;
+    }
+
+    .cibil__otp-sended {
+        width: 50%;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        display: none;
+    }
+
+    .cibil__otp-sended.active {
+        display: block;
+    }
+
+    .cibil__form-btn {
+        margin-top: 65px;
+        max-width: 123px;
+    }
+
+    @media (max-width: 768px) {
+        .cibil__otp {
+            flex-direction: column;
+        }
+
+        .cibil__otp-sended {
+            width: 100%;
+        }
+
+        .custom-select,
+        .cibil__form-select {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 660px) {
+        .cibil-banner .banner__inner {
+            min-height: auto;
+            padding-top: 50px;
+            padding-bottom: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cibil {
+            padding: 50px 0 20px;
+        }
+
+        .cibil-banner .banner__title {
+            margin-bottom: 10px;
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        .cibil-banner .banner__descr {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .cibil__top,
+        .cibil__selects {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cibil__label {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.12px;
+            margin-bottom: 30px;
+        }
+
+        .cibil__otp-item {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cibil__otp-btn {
+            max-width: 120px;
+            font-size: 15px;
+            line-height: 32.426px;
+            height: 44px;
+        }
+
+        .cibil__otp-input label {
+            font-size: 14px;
+            line-height: 19px;
+            top: -28px;
+        }
+
+        .cibil__form-input,
+        .cibil__form-select {
+            font-size: 14px;
+            line-height: 32.4px;
+        }
+
+        .cibil__form-input::placeholder {
+            font-size: 14px;
+            line-height: 32.4px;
+        }
+
+        .cibil__form-btn {
+            margin: 0px auto 40px;
+        }
+
+        .cibil__otp {
+            gap: 10px;
+        }
+
+        .cibil__otp-sended {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        .cibil__otp-item:last-of-type {
+            flex-direction: row;
+            gap: 34px;
+        }
+
+        .select-items div {
+            font-size: 14px;
+            line-height: 32.4px;
+        }
+    }
+
+    .cibil__otp-item {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .cibil__otp-input {
+        flex: 1;
+    }
+
+    .cibil__otp-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .cibil__otp-get {
+        background-color: #007bff;
+    }
+
+    .cibil__otp-resend {
+        background-color: #28a745;
+    }
+
+    .cibil__otp-sended {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .cibil__form-btn {
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.1em;
+    }
+
+    .btn {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33.6px;
+        width: 100%;
+        border-radius: 30px;
+        background: #5AAB61;
+        min-height: 60px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    // .cibil__otp-item.get-otp {
+    //     max-width: max-content;
+    //     min-width: 465px;
+    // }
+
+    .cibil__otp-item {
+        .cibil__form-input {
+            // min-width: 200px;
+        }
+
+        label {
+            width: max-content;
+        }
+    }
+
+    cibil__otp-sended {
+        display: block;
+    }
+
+    .cibil__otp-sended {
+        font-size: 16px;
+    }
+
+    .cibil-otp-block {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+        .cibil-otp-block {
+            flex-direction: column;
+
+        }
+    }
+
+    @media (max-width: 767px) {
+        .cibil__otp-item.get-otp {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .cibil__otp-item.get-otp {
+            max-width: 100%;
+
+            .cibil__otp-input {
+                max-width: 280px;
+            }
+        }
+    }
+
+    .circle-animate {
+        top: 150px;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .mobile-img {
+        max-height: 230px;
+    }
+    .banner__image{
+
+    }
+ 
+
+    .mobile-content-img {
+        max-height: 165px;
+        width: auto !important;
+    }
+    .banner__image{
+        bottom: 2px;
+        .mobile-img{
+            bottom: 0;
+            max-height: 250px;
+            // width: auto !important;
+            width: auto;
+            @media (max-width: 768px){
+                position: unset!important;
+                transform: translateX(-0%);
+                width: 100%;
+            }
+        }
+
+    }
+
+
+}
+#cibil-banner-section{
+    @media screen and (max-width: 767px)  and (min-width: 641px){
+        .banner__title.h2_title{
+            font-size: 30px!important;
+        }
+    }
+
+}
+.banner__image{
+    right: 128px;
+    @media (max-width: 930px){
+        right: 30px;  
+    }
+    @media (min-width: 931px){
+        right: 16vw;  
+    }
+
+    @media (min-width: 1025px){
+        right: 14vw;  
+    }
+    @media (min-width: 1399px){
+        right: 10vw;  
+    }
+
+}
+.cibil__otp-sended {
+    display: block !important;
+}
+
+.cibil-score-page {
+    .applyonline {
+        &__content {
+            padding: 20px;
+            position: relative;
+
+            .header {
+                background-color: #003366;
+                color: white;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        &__close {
+            z-index: 9999;
+            top: 10px;
+        }
+    }
+    .h2_title.error_message{
+        color: #040018;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .header {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    #scoreText {
+        margin-top: 10px;
+        font-size: 4rem;
+    }
+
+    .scorecontent {
+        font-size: 2rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .color-description {
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+        }
+    }
+
+    .color-brick {
+        width: 35px;
+        height: 20px;
+        margin-right: 10px;
+        border-radius: 3px;
+    }
+
+    .score-description {
+        // width    : 100%;
+        max-width: max-content;
+    }
+    #downloadbutton{
+        margin: 0 auto;
+    }
+    .page__content{
+        .credit-heading{
+            color: #003087;
+            text-decoration: underline;
+        }
+        margin-top: 4rem;
+        h4{
+            color: #000;
+        }
+        >div{
+            margin-bottom: 5rem;
+        }
+        p{
+            margin: 15px auto;
+        }
+        ol,ul{
+            li{
+                color: #000;
+              
+                p{
+                    margin: 0;
+                }
+            }
+            li,li.cards-about__descr{
+                line-height: 30px;
+            }
+        }
+        ol{
+            li{
+                padding-top: 0;
+                padding-bottom: 0;
+               
+            }
+        }
+    }
+
+}
+
+.spedometer-container {
+    text-align: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;  
+ 
+
+    .gauge {
+        // width: 300px;
+        height: 200px;
+        margin-left: 0;
+        display: block;
+        // width: 100%; 
+        // max-width: 300px;
+    }
+
+
+    .needle {
+        fill: red;
+    }
+
+ 
+}
+.page-content-img{
+    margin-bottom: 2.5rem;
+}
+@media  screen and (min-width:768px) {
+    .spedometer-container{
+        >div,
+        svg {
+            width: 33.33%;
+        }
+    }
+}
+
+@media  screen and (max-width:767px) {
+
+    .spedometer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        .gauge {
+            width: 100%; 
+        }
+        
+    }
+    .cibil-score-page{
+        #downloadbutton{
+            margin: 3rem auto 0;
+        }
+        .page__content{
+            >div{
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+body{
+    div.credit-score-btn{
+        text-align: center;
+        a{
+            text-align: center;
+            .get-credit-score-img{
+                width: 250px;
+                @media (max-width: 767px){
+                    width: 200px;
+                }
+            }
+        }
+
+
+        margin: 5rem 0;
+        .btn{
+            margin: 0 auto;
+        }
+        .btn::before {
+            position: absolute;
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76' height='115' viewBox='0 0 76 115' fill='none'%3E%3Cg style='mix-blend-mode:overlay'%3E%3Crect width='14.4283' height='112.891' transform='matrix(0.80393 0.595345 -0.480363 0.877443 54.5859 0.203125)' fill='%23FFEEB9'/%3E%3Crect width='4.35438' height='113.387' transform='matrix(0.804805 0.593764 -0.481652 0.876497 71.4971 12.3682)' fill='%23FFEEB9'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 113.391px;
+            z-index: -1;
+            animation: shine 2.5s linear infinite;
+            mix-blend-mode: overlay;
+            filter: blur(2.5px);
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .cibil-score-page{
+        #cibil-banner-section{
+            .banner__inner{
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+.cibil-score-page .cibil__otp-btn:disabled, #form-submit:disabled, 
+#OTP:disabled {
+    background-color: #c5c3c3a2;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+span#timer {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding-top: 6px;
+}
+
+#cibilForm {
+    .cibil__otp-block {
+        .cibil__otp-input {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            gap: 0;
+            
+            #otpStatus {
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                
+                .otpStatus-success, .otpStatus-error {
+                    width: 25px;
+                    height: 25px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 16px;
+                    &.active {
+                        display: flex;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            input.cibil__form-input {
+                margin: 0;
+                padding: 5px 14px;
+            }
+        }
+    }
+}
+
+#otp_input_container{
+    .cibil__otp-item.cibil__otp-block{
+    //    input.cibil__form-input{
+    //     width: max-content;
+    //    }
+    }
+    >div.cibil__otp-input{
+        width: 100%;
+        max-width: max-content;
+    }
+    div.cibil__otp-item.cibil__otp-block{
+        width: 140px!important;
+       .cibil__otp-input {
+        width: 140px!important;
+        position: relative;
+        .input.cibil__form-input{
+            width: 140px!important;
+            min-width: max-content;
+        }
+       }
+    }
+    @media (min-width: 661px){
+        display: flex;
+        align-items: flex-start;
+        >div.cibil__otp-item{
+            max-width: 357px;
+            width: 33.33%;
+        }
+    
+    }
+
+    .mobile-number-label{
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+    }
+    @media (max-width: 660px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        align-items: self-start;
+        div.cibil__otp-block{
+            width: 100%;
+            grid-column: 1 / -1;
+        }
+        div.cibil__otp-item.mobile-number{
+            // grid-column: 1;
+            // width: 50%;
+        }
+        div.otpsend-btn{
+            // grid-column: 2;
+            // justify-self: end;
+        }
+        #otpsend{
+            width: 100%;
+            max-width: max-content;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    @media (max-width: 440px) {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: self-start;
+        div.cibil__otp-block{
+            width: 100%;
+        }
+        div.cibil__otp-item.mobile-number{
+            // grid-column: 1;
+            // width: 50%;
+            margin-bottom: 0px;
+        }
+        div.otpsend-btn{
+            // grid-column: 1;
+            // justify-self: start;
+        }
+        #otpsend{
+            // width: 100%;
+            // max-width: max-content;
+        }
+
+    }
+
+}
+#otpStatus {
+    font-size: 16px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    .otpStatus-success, .otpStatus-error {
+        width: 25px;
+        height: 25px;
+        display: none; // Hide by default
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 16px;
+        margin-right: 15px;
+        &.active {
+            display: flex;
+        }
+    }
+    .otpStatus-success {
+        color: #fff;
+        background: green;
+    }
+    .otpStatus-error {
+        color: #fff;
+        background: red;
+    }
+}
+#form_instant-call-back.applyonline__form{
+    .apply__label a {
+        color: #0070E0;
+    }
+    .accecpt-terms.frm_form_field {
+        margin: 0px 0 25px;
+        color: rgb(56, 58, 62);
+        font-family: Urbanist, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.161px;
+        letter-spacing: 0.18px;
+        cursor: pointer;
+        display: block!important;
+        // flex-direction: row!important;
+        a{
+            color: #0070E0;
+        }
+        .frm_required{
+            color: red;
+            margin-right: 2px;
+        }
+        .frm_primary_label,.frm_opt_container{
+            display: inline-block;
+            float: left;
+        }
+        .frm_opt_container{
+            width: 95%;
+        }
+        .frm_error{
+            width: 100%;
+            display: block;
+            clear: both;
+        }
+        .frm_checkbox{
+            label{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                input[type="checkbox"] {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+    .applyonline__form-btn.btn{
+        margin-top: 10px;
+    }
+}
+

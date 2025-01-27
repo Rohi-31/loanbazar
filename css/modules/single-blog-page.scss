@@ -1,0 +1,19 @@
+.single-blog-page {
+	.decimal {
+		list-style-type: decimal;
+	}
+	.lower-alpha {
+		list-style-type: lower-alpha;
+	}
+	ol,
+	ul {
+		padding-left: 30px;
+		padding-bottom: 15px;
+		li {
+			padding-bottom: 10px;
+		}
+	}
+	.pros-cons {
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,23 @@
+/* 3rd party packages */
+// @import "normalize.css";
+// @import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+
+/* SASS and Global'ish Stuff */
+// @import "base/variables";
+// @import "base/baseline";
+// @import "base/utility-classes";
+
+/* BEM Blocks */
+
+@import "modules/common.scss";
+@import "modules/home.scss";
+@import "modules/home-loan.scss";
+@import "modules/single-loan.scss";
+@import "modules/popup.scss";
+@import "modules/cibil.scss";
+@import "modules/cards.scss";
+@import "modules/slider.scss";
+@import "modules/about.scss";
+@import "modules/loan-rates.scss";
+@import "modules/single-blog-page.scss";
+@import "modules/credit-score.scss";

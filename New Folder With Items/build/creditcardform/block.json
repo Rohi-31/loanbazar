@@ -1,0 +1,8 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ourblocktheme/creditcardform",
+  "title": "Loan Bazaar Credit Card Form Page",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

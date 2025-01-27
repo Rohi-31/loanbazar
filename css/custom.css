@@ -1,0 +1,147 @@
+.home-loan-content::before {
+	background-image: url("../images/home-loan-banner.webp");
+}
+.home-loan-page .home-loan-content::before {
+	background-image: url("../images/home-loan-banner.webp");
+}
+.mortgage-loan-page .home-loan-content::before {
+	background-image: url("../images/Business.webp");
+}
+.business-Loan-page .home-loan-content::before {
+	background-image: url("../images/Business-hero.webp");
+}
+.personal-loan-page .home-loan-content::before {
+	background-image: url("../images/Personal-Loan.webp");
+}
+.cards .cards__inner::after {
+	background-image: url("../images/cards.webp");
+}
+@media (max-width: 480px) {
+	.home-loan-content::before {
+		background-image: url(../images/home-loan-mobile.webp);
+		top: 0px;
+	}
+	.home-loan-page .home-loan-content::before {
+		background-image: url(../images/home-loan-mobile.webp);
+	}
+	.business-Loan-page .home-loan-content::before {
+		background-image: url("../images/Business-mobile.webp");
+	//	top: -25px;
+	}
+	.personal-loan-page .home-loan-content::before {
+		background-image: url("../images/Personal-mobile.webp");
+	}
+	.cards .cards__inner::after {
+		background-image: url("../images/Credi-card-mobile.webp");
+		background-position: top;
+	}
+	.mortgage-loan-page .home-loan-content::before {
+		background-image: url("../images/Mortgage.webp");
+	}
+}
+@media (max-width: 380px) {
+	.home-loan-content::before {
+		top: 0;
+	}
+}
+.compare__content-btn.btn::before {
+	position: absolute;
+	content: "";
+	background-image: url(../images/home-loan/animatin-btn.svg);
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 113.391px;
+	z-index: -1;
+	animation: shine 2.5s linear infinite;
+	mix-blend-mode: overlay;
+	filter: blur(2.5px);
+}
+
+@media (max-width: 480px) {
+}
+
+.find__selection .searchandfilter .sf-field-taxonomy-card_type .sf-input-radio {
+	display: none;
+}
+.find__selection .searchandfilter .sf-field-taxonomy-card_type .sf-label-radio {
+	display: inline-block;
+	padding-left: 35px; /* Adjust according to your image size */
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px; /* Adjust according to your image size */
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-0 .sf-label-radio {
+	background-image: url("../images/filter/all.svg");
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-34 .sf-label-radio {
+	background-image: url("../images/filter/cash.svg");
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-36 .sf-label-radio {
+	background-image: url("../images/filter/fuel.svg");
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-35 .sf-label-radio {
+	background-image: url("../images/filter/rewards.svg");
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-33 .sf-label-radio {
+	background-image: url("../images/filter/shopping-bag.svg");
+}
+
+.find__selection .sf-field-taxonomy-card_type .sf-item-37 .sf-label-radio {
+	background-image: url("../images/filter/travel.svg");
+}
+.find__selection .sf-field-taxonomy-card_type .sf-item-39 .sf-label-radio {
+	background-image: url("../images/filter/dining.svg");
+}
+.find__selection .sf-field-taxonomy-card_type .sf-item-42 .sf-label-radio {
+	background-image: url("../images/filter/health.svg");
+}
+
+.axix__box-ul li::before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13' fill='none'%3E%3Cg clip-path='url(%23clip0_255_12641)'%3E%3Cpath d='M1.32031 7.81536L4.89859 11.3936L14.4407 1.85156' stroke='%233096FC' stroke-width='2.38552' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_255_12641'%3E%3Crect width='15.5059' height='11.9276' fill='white' transform='translate(0.125 0.660156)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.axix::before {
+	background-image: url("../images/axix-bg.svg");
+}
+
+/* Style for the loading screen */
+#loading-screen {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+}
+
+/* Initially, show the loading screen */
+body.loading #loading-screen {
+	display: flex;
+}
+
+/* Hide the loading screen after the page is loaded */
+body.loaded #loading-screen {
+	display: none;
+}
+
+.credit-check #loading-screen {
+	background-color: transparent;
+   }
+   .credit-check #loading-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}

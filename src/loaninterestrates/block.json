@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ourblocktheme/loaninterestrates",
+	"title": "Loan Bazaar Home Loan Interest Rate",
+	"icon": "admin-home",
+	"description": "Display home loan interest rates",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

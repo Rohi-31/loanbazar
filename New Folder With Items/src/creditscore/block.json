@@ -1,0 +1,8 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ourblocktheme/creditscore",
+	"title": "Loan Bazaar Credit Score Terms Page",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
