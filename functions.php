@@ -58,7 +58,7 @@ function pageBanner($args = null)
 
 function lb_files()
 {
-    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDin3iGCdZ7RPomFLyb2yqFERhs55dmfTI', null, '1.0', true);
+    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIza----', null, '1.0', true);
     wp_enqueue_script('main-lb-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
 
 
@@ -513,8 +513,7 @@ function handle_cibil_form_submission()
 
     // API Endpoint and Bearer Token
     $api_url = 'https://kyc-api.surepass.io/api/v1/credit-report-experian/fetch-report-pdf';
-    $bearer_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNTk5NTc4NywianRpIjoiYmVjMmYyMzItYjNhMy00MTE5LTllOGEtOTU1NmYyYWVmMjNhIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGV2LmxvYW5iYXphckBzdXJlcGFzcy5pbyIsIm5iZiI6MTczNTk5NTc4NywiZXhwIjoyMzY2NzE1Nzg3LCJlbWFpbCI6ImxvYW5iYXphckBzdXJlcGFzcy5pbyIsInRlbmFudF9pZCI6Im1haW4iLCJ1c2VyX2NsYWltcyI6eyJzY29wZXMiOlsidXNlciJdfX0.4pV4CaM2eKPq_R6pFJ3W08kBYfbb5xW4tjgaggM8BUg'; // Replace with your actual Bearer Token
-
+    $bearer_token = 'ey---'; // Replace with your actual Bearer Token
     // Request body
     $api_request_body = [
         'name' => sanitize_text_field($form_data['name']),
@@ -760,9 +759,9 @@ function send_sms($mobile)
 {
 
     $api_url = 'https://kyc-api.surepass.io/api/v1/sms/send-sms';
-    $bearer_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNzE3OTcxOSwianRpIjoiMzFlYmM5ZDEtYmVjMC00ZjEzLWI4YzQtYmIwNjg5ZjY2MzAwIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGV2LmxvYW5iYXphcjJAc3VyZXBhc3MuaW8iLCJuYmYiOjE3MzcxNzk3MTksImV4cCI6MjM2Nzg5OTcxOSwiZW1haWwiOiJsb2FuYmF6YXIyQHN1cmVwYXNzLmlvIiwidGVuYW50X2lkIjoibWFpbiIsInVzZXJfY2xhaW1zIjp7InNjb3BlcyI6WyJ1c2VyIl19fQ.zVTkUSnFCsCfK9Fznfxvjj6r9wSIRvNzLFd_YZ1bM8M'; // Replace with your actual Bearer Token
+    $bearer_token = 'ey---'; // Replace with your actual Bearer Token
 
-    $templateid = '1707173744799485711';
+    $templateid = '170--'; //insert your id
 
     $otp = rand(100000, 999999);
 
